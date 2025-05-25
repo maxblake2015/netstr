@@ -34,7 +34,7 @@ tr:hover td:nth-child(2) {
 td {
     position: relative;
     padding: 10px 15px;
-    background-color: #9C27B0;
+    background-color: #648ca5;
     color: #fff;
     word-break: break-all;
 }
@@ -44,7 +44,7 @@ td a {
 }
 
 td:first-child {
-    background-color: #6A1B9A;
+    background-color: #103c58;
     font-weight: bold;
     white-space: nowrap;
 }
