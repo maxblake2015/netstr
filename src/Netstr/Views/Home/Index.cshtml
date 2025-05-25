@@ -6,17 +6,17 @@
 
         <table>
             <tr>
-                <td>Name</td>
+                <td>Nazwa</td>
                 <td>@Model.RelayInformation.Name</td>
             </tr>
             <tr>
-                <td>Description</td>
+                <td>Opis</td>
                 <td>@Model.RelayInformation.Description</td>
             </tr>
             @if (!string.IsNullOrEmpty(@Model.RelayInformation.Contact))
             {
                 <tr>
-                    <td>Contact</td>
+                    <td>Kontakt</td>
                     <td><a href="mailto:@Model.RelayInformation.Contact" target="_blank">@Model.RelayInformation.Contact</a></td>
                 </tr>
             }
@@ -25,7 +25,7 @@
                 <td><a href="https://nostrudel.ninja/#/u/@(Model.RelayInformation.PublicKey)" target="_blank">@Model.RelayInformation.PublicKey</a></td>
             </tr>
             <tr>
-                <td>Supported NIPs</td>
+                <td>Obsługiwane NIPy</td>
                 <td>
                     @foreach (var nip in @Model.RelayInformation.SupportedNips)
                     {
@@ -34,11 +34,11 @@
                 </td>
             </tr>
             <tr>
-                <td>Version</td>
+                <td>Wersja</td>
                 <td>@Model.RelayInformation.SoftwareVersion</td>
             </tr>
             <tr>
-                <td>Software</td>
+                <td>Oprogramowanie</td>
                 <td><a href="@Model.RelayInformation.Software" target="_blank">@Model.RelayInformation.Software</a></td>
             </tr>
             @if (!string.IsNullOrEmpty(Model.Environment))
@@ -51,7 +51,7 @@
         </table>
 
         <div class="connect-box">
-            Connect to this relay using the following address: <strong>@Model.ConnectionLink</strong>
+            Adres podłączenia do tego transmitera: <strong>@Model.ConnectionLink</strong>
         </div>
     </div>
 </div>
